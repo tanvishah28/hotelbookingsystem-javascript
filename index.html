@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font awesome link for icons-->
+    <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hotel Booking System</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand mb-3">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link"><span class="total-hotels">0</span> Hotels</a>
+            </li>
+        </ul>
+
+    </nav>
+    <br>
+
+    <!-- <nav class="navbar">
+        <h4>Hotels</h4>
+    </nav>
+    <br> -->
+
+    <div class="hotel-div">
+        <table class="table table-borderless">
+            <thead class="thead-dark">
+                <tr>
+                    <th style="display: none;" id="id">ID</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Phone</th>
+                    <th>Email ID</th>
+                    <th>Rating</th>
+                    <th>Pet Friendly</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="hotel-list">
+                <!-- <tr>
+                    <td>Taj</td>
+                    <td>Mumbai</td>
+                    <td>9876543210</td>
+                    <td>taj@taj.com</td>
+                    <td>5</td>
+                    <td>Yes</td>
+                    <td><a href="#" class="view secondary-content"><i class="view-item fa fa-eye"></i></a>
+                        <a href="#" class="edit secondary-content"><i class="edit-item fa fa-pencil"></i></a>
+                        <a href="#" class="delete secondary-content"><i class="delete-item fa fa-xmark"></i></a>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="container">
+            <a href="#" class="add secondary-content"><i class="fa fa-circle-plus fa-3x" id="add-icon"></i></a>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="hotel.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

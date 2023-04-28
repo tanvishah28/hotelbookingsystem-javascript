@@ -1,0 +1,71 @@
+$blackColor: black;
+$redColor: red;
+$customLightBlueColor: rgb(99, 208, 245);
+$customLightCyanColor: rgb(167, 251, 251);
+$customLightGreyColor: hsl(0, 0%, 96%);
+
+
+.navbar {
+    background-color: $customLightBlueColor;
+    width: 100%;
+    display: block;
+
+    // h4 {
+    //     color: $blackColor;
+    //     font-weight: bold;
+    //     text-align: center;
+    //     padding-left: 50%;
+    //     padding-right: 50%;
+    // }
+}
+
+.nav-link {
+    color: $blackColor;
+    font-weight: bold;
+}
+
+.hotel-div {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    label {
+        margin-right: 10px;
+    }
+
+    input#pet_friendly {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.delete-item {
+    color: $redColor;
+}
+
+table {
+    #list-row {
+        background-color: $customLightGreyColor;
+    }
+}
+
+.container {
+    padding-left: 90%;
+
+    .fa-circle-plus {
+        color: grey;
+    }
+}
+
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}
